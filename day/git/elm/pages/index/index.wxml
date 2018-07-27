@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<import  src="../template/swiper/swiper"/>
+<view  class="container">
+   <template is="banner-swiper" data="{{imgUrls}}"/>
+    <view class="film">
+       <view class="now-playing" wx:for="{{nowPlaying}}" wx:key="{{index}}">
+          <image src="{{item.cover.origin}}" />
+          <view class="movie">
+              <text class="name">{{item.name}}</text>
+              <text class="cinema">{{item.cinemaCount}}家影院上映 0人购票</text>
+              <text class="grade">{{item.grade}}</text>
+          </view>
+       </view>
+       <view class='more'>更多热映电影</view>
+       <view class='line'>
+          <view><text class='line_text'>即将上映</text></view>
+       </view>
+            <!-- 即将上映 -->
+        <view class='coming-soon' wx:for="{{comingSoon}}" wx:key="{{index}}">
+              <image src='{{item.cover.origin}}'/>
+            <view class='coming_soon_1'>
+                <view class='coming_nmae'>{{item.name}}</view>
+                <view class='coming_time'>7月26号上映</view>
+            </view>
+        </view>    
+    </view>
+</view>
+

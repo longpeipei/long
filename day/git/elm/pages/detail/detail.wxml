@@ -1,0 +1,16 @@
+<!--pages/detail/detail.wxml-->
+
+<view>
+   <image src='https://pic.maizuo.com/usr/movie/e84c77584fd5397f655e01a8c01f2d9b.jpg'/>
+</view>
+<view class='nav'>
+   <text>影片简介</text>
+   <view>
+       <text>导       演：</text>
+       <text>姜文</text>
+   </view>
+   <view>
+       <text>主       演：</text>
+       <text>姜文 | 彭于晏 | 廖凡 | 周韵 | 许晴</text>
+   </view>
+</view>
